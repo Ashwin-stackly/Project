@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-// MAIN CLASS
 
 public class HospitalAppointmentManagementSystem {
 
@@ -562,8 +561,6 @@ public class HospitalAppointmentManagementSystem {
         }
     }
 
-
-    //  MAIN METHOD 
 
     public static void main(String[] args) {
 
