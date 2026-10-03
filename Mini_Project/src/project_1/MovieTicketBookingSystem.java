@@ -19,19 +19,13 @@ public class MovieTicketBookingSystem {
             true,
             false
     };
-
-    // 3D ARRAY FOR SEATS
-    // 4 movies, 5 rows, 8 seats
     static boolean[][][] seats = new boolean[4][5][8];
 
-    // Customer name for each movie, row and seat
     static String[][][] customerNames = new String[4][5][8];
 
-    // Ticket prices
     static double weekdayPrice = 150.0;
     static double weekendPrice = 200.0;
 
-    // Movie rating - separate rating for each movie
     static double[] totalRating = new double[4];
     static int[] ratingCount = new int[4];
 
@@ -106,9 +100,7 @@ public class MovieTicketBookingSystem {
     }
 
 
-    // =====================================================
     // 1. SHOW MOVIE AVAILABILITY
-    // =====================================================
 
     static void showMovieAvailability() {
 
@@ -129,9 +121,7 @@ public class MovieTicketBookingSystem {
     }
 
 
-    // =====================================================
     // 2. SHOW AVAILABLE SEATS
-    // =====================================================
 
     static void showAvailableSeats() {
 
@@ -156,9 +146,8 @@ public class MovieTicketBookingSystem {
     }
 
 
-    // =====================================================
     // DISPLAY SEATS
-    // =====================================================
+
 
     static void displaySeats(int movieIndex) {
 
@@ -199,10 +188,8 @@ public class MovieTicketBookingSystem {
         System.out.println("X = Booked");
     }
 
-
-    // =====================================================
     // 3. BOOK TICKET
-    // =====================================================
+
 
     static void bookTicket() {
 
@@ -271,9 +258,7 @@ public class MovieTicketBookingSystem {
         }
 
 
-        // =================================================
         // WEEKEND PRICING
-        // =================================================
 
         System.out.print(
                 "Is today weekend? (yes/no): "
@@ -306,9 +291,7 @@ public class MovieTicketBookingSystem {
                 ticketPrice * ticketCount;
 
 
-        // =================================================
         // DISCOUNT COUPON
-        // =================================================
 
         double discount = 0.0;
 
@@ -363,9 +346,7 @@ public class MovieTicketBookingSystem {
                 totalAmount - discount;
 
 
-        // =================================================
         // SELECT SEATS
-        // =================================================
 
         for (int i = 0; i < ticketCount; i++) {
 
@@ -428,10 +409,7 @@ public class MovieTicketBookingSystem {
             }
         }
 
-
-        // =================================================
         // BOOKING SUMMARY
-        // =================================================
 
         System.out.println("\n======================================");
         System.out.println("           BOOKING SUMMARY");
@@ -479,9 +457,7 @@ public class MovieTicketBookingSystem {
     }
 
 
-    // =====================================================
     // 4. CANCEL TICKET
-    // =====================================================
 
     static void cancelTicket() {
 
@@ -585,10 +561,7 @@ public class MovieTicketBookingSystem {
         }
     }
 
-
-    // =====================================================
     // 5. VIEW BOOKING DETAILS
-    // =====================================================
 
     static void viewBookingDetails() {
 
@@ -644,9 +617,8 @@ public class MovieTicketBookingSystem {
     }
 
 
-    // =====================================================
     // 6. RATE MOVIE
-    // =====================================================
+
 
     static void rateMovie() {
 
@@ -708,9 +680,8 @@ public class MovieTicketBookingSystem {
     }
 
 
-    // =====================================================
     // 7. SHOW MOVIE RATING
-    // =====================================================
+
 
     static void showMovieRating() {
 
@@ -767,9 +738,7 @@ public class MovieTicketBookingSystem {
     }
 
 
-    // =====================================================
     // COUNT AVAILABLE SEATS
-    // =====================================================
 
     static int countAvailableSeats(int movieIndex) {
 
@@ -794,9 +763,7 @@ public class MovieTicketBookingSystem {
     }
 
 
-    // =====================================================
     // FIND MOVIE
-    // =====================================================
 
     static int findMovie(String movieName) {
 
